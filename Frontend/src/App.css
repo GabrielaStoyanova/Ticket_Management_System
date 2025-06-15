@@ -1,0 +1,21 @@
+/* Define your CSS styles here */
+
+/* Define your CSS styles here */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  
+}
+
+.child2 {
+  /* Styles for the MainContent and ContentDetails */
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  flex: 1;
+}
+
