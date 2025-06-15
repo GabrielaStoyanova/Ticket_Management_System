@@ -1,0 +1,197 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    background-color: #303841; /* Example background color */
+    color: white; /* Example text color */
+    flex: 1; /* Each item will have equal width and grow/shrink equally */
+    overflow: hidden;
+}
+  
+.options {
+    display: flex; /* Make the container flex */
+    align-items: center; /* Center items vertically */
+}
+
+.register,
+.login,
+.add-ticket {
+    /* Add any additional button styles you need */
+    margin-left: 10px; /* Add space between buttons */
+    margin-right: 10px;
+}
+
+.n1Nav{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+
+.n1Nav:hover {
+    color: #03c1c4; /* New color when hovered */ /* Add a slight delay to the color change */
+    font-size: 31px;
+  }
+
+.add-ticket{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F3F3F3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    will-change: transform;
+}
+    
+.add-ticket:disabled {
+    pointer-events: none;
+}
+    
+.add-ticket:hover {
+    color: #fff;
+    background-color: #03c1c4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+    
+.add-ticket:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.register {
+  background-color: #303841;
+  border: 1px solid #303841;
+  border-radius: 4px;
+  color: #F3F3F3;
+  cursor: pointer;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  min-width: fit-content;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+
+.register:hover {
+  color: #03c1c4;
+  font-size: 16px;
+}
+
+.register:focus {
+  color: #03c1c4;
+  outline: none;
+  font-size: 16px;
+}
+
+.login {
+    background-color: #303841;
+    border: 1px solid #303841;
+    border-radius: 4px;
+    color: #F3F3F3;
+    cursor: pointer;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 14px;
+    font-weight: 600;
+    height: 36px;
+    min-width: fit-content;
+    padding: 10px 10px 10px 0px; /* top, right, bottom, and left */
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+  }
+  
+  .login:hover {
+    color: #03c1c4;
+    font-size: 16px;
+  }
+  
+  .login:focus {
+    color: #03c1c4;
+    outline: none;
+    font-size: 16px;
+  }
+
+.withoutAuth {
+  display: flex; /*to place the two buttons next to each other*/
+}
+
+.buttonsNavbar{
+  margin-right: 10px;
+  background-color: #303841;
+  border: 1px solid #303841;
+  border-radius: 4px;
+  color: #F3F3F3;
+  cursor: pointer;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  min-width: fit-content;
+  padding: 10px 10px 10px 0px; /* top, right, bottom, and left */
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+
+.buttonsNavbar:hover {
+  color: #03c1c4;
+  font-size: 16px;
+}
+
+.buttonsNavbar:focus {
+  color: #03c1c4;
+  outline: none;
+  font-size: 16px;
+}
+
+.tms-hidden {
+  display: none;
+}
+
+@media (max-width: 768px) { /*when the browser windows gets smaller or in smaller screens like phones*/
+  .n1Nav {
+    display: none; /* Hide the original h1 element */
+  }
+
+  /* Show "TMS" on small screens */
+  .tms-hidden {
+    display: block;
+  }
+}
+
+
+
+
+

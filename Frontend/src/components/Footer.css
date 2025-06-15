@@ -1,0 +1,47 @@
+.footer{
+    /* Adjust the height as needed */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-grow: 1;
+    background-color: #303841;
+    color: white;
+    overflow: hidden;
+    width: 100vw;
+    height: 10vh;
+}
+
+.Pfooter{
+    margin-left: auto; /* Push the anchor element to the end */
+    font-family: 'Times New Roman';
+    text-shadow: 2px 2px 4px #000000;
+    color: #fff;
+    transition: transform .2s;
+    order: 1;
+  }
+  
+.Pfooter:hover{
+    text-shadow: 4px 4px 8px #000000;
+}
+
+.aGit {
+    /* Styles for the GitHub link */
+    transition: transform 0.2s;
+    order: 2;
+    margin-left: auto; /* Push the anchor element to the end */
+}
+  
+.aGit:hover {
+    transform: scale(1.2);
+}
+
+.footer .git {
+    /* Styles for the GitHub icon */
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 6px;
+    padding: 0;
+}

@@ -1,0 +1,15 @@
+.main-content {
+  display: flex;
+  overflow: auto;
+  width: 100vw;
+  height: 80vh;
+  background-color: #4e5f6c;
+}
+ 
+.main-content.with-details {
+  display: flex;
+  overflow: auto;
+  background-color: #4e5f6c;
+  width: 70vw; 
+  height: 80vh;
+}

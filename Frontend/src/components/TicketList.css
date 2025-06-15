@@ -1,0 +1,499 @@
+.ticket-box p {
+  word-wrap: break-word;     /* Ensure long words break to avoid overflow */
+  white-space: normal;       /* Allow wrapping */
+  max-width: 250px;          /* Adjust this value as needed */
+}
+
+ ul.ulTicketList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /*space between the li elements*/
+    list-style-type: none;
+    padding: 10px;
+    font-family: 'Times New Roman';
+    width: fit-content;
+    min-width: 10px;
+    height: fit-content;
+}
+
+ul.ulTicketList li.ticket-box {
+    background-color: #303841;
+    color: #F3F3F3;
+    padding: 15px;
+    margin: 5px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: rgb(3, 193, 196) 0px 0px 0px 3px,  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.DropdownLine{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2List{
+    color: #F3F3F3;
+}
+
+.label {
+    color: #03c1c4;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+.dropdownFilter{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+  /* Style for the dropdown button */
+  .dropdown-button {
+    appearance: none;
+    background-color: #303841;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F3F3F3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    height: fit-content;
+    will-change: transform;
+  }
+
+.dropdown-buttonFilter{
+  appearance: none;
+    background-color: #303841;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F3F3F3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 40px;
+    min-width: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    height: fit-content;
+    will-change: transform;
+}
+
+.dropdown-button:disabled {
+    pointer-events: none;
+}
+
+.dropdown-buttonFilter:disabled{
+  pointer-events: none;
+}
+    
+.dropdown-button:hover {
+    color: #fff;
+    background-color: #03c1c4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.dropdown-buttonFilter:hover{
+  color: #fff;
+  background-color: #03c1c4;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+    
+.dropdown-button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.dropdown-buttonFilter:active{
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.dropdown:hover .dropdown-button {
+  border-radius: 15px 15px 0 0; /*to stay if the is hover over the div parent*/
+  background-color: #20242a;
+}
+
+.dropdownFilter:hover .dropdown-buttonFilter {
+  border-radius: 15px 15px 0 0; /*to stay if the is hover over the div parent*/
+  background-color: #20242a;
+}
+  
+  /* Style for the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #303841;
+    min-width: fit-content;
+    z-index: 1;
+    color: #F3F3F3;
+    padding: 10px;
+    margin-left: 2px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: rgb(3, 193, 196) 0px 0px 0px 2px,  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+.CSSdropDownSort{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+  .dropdown-contentFilter{
+    display: none;
+    position: absolute;
+    min-width: fit-content;
+    z-index: 1;
+    background-color: #303841;
+    color: #F3F3F3;
+    padding: 10px;
+    margin-left: 12px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: rgb(3, 193, 196) 0px 0px 0px 2px,  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  /* Style for the dropdown links */
+  .dropdown-content button {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    appearance: none;
+    background-color: #303841;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F3F3F3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 130px; /* Force buttons to similar size */
+    height: fit-content;
+    will-change: transform;
+  }
+
+  .dropdown-content button:first-child {
+    margin-top: 10px;
+  }
+
+  .dropdown-contentFilter button{
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color on hover */
+  .dropdown-content button:hover {
+    color: #fff;
+    background-color: #03c1c4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  .dropdown-content button:active{
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
+  /* Show the dropdown content when the button is hovered over */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 0px 15px 15px 15px;
+  }
+
+  .dropdownFilter:hover .dropdown-contentFilter{
+    display: block;
+    border-radius: 0px 15px 15px 15px;
+  }
+
+.buttonsTickets{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formFilter{
+ display: flex;
+ justify-content: baseline;
+ align-items: baseline;
+ width: 100%;
+ font-family: 'Times New Roman', Times, serif;
+}
+
+.labelFilter{
+  margin-right: 5px;
+  width: 65px;
+  text-align: center;
+}
+
+.inputFilter{
+  margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #303841;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    min-height: fit-content;
+    min-width: fit-content;
+    width: 250px;
+    outline: none; /*when clicking on it to not have outline*/
+    margin-top: 10px; /*make them away from the label*/
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+
+.filterAllTicketButton{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #03c1c4;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #F3F3F3;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 40px;
+  min-width: 0;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  will-change: transform;
+}
+
+.filterAllTicketButton:disabled {
+  pointer-events: none;
+}
+  
+.filterAllTicketButton:hover {
+  color: #fff;
+  background-color: #03c1c4;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+  
+.filterAllTicketButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.submitTickDropdown{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #03c1c4;
+  box-sizing: border-box;
+  color: #F3F3F3;
+  cursor: pointer;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: fit-content;
+  min-width: fit-content;
+  outline: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  will-change: transform;
+}
+
+.submitTickDropdown:disabled {
+  pointer-events: none;
+}
+  
+.submitTickDropdown:hover {
+  color: #fff;
+  background-color: #03c1c4;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+  
+.submitTickDropdown:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.labelFilter label{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.buttonBase {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F3F3F3;
+    cursor: pointer;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    min-height: 40px;
+    padding: 0 10px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    width: fit-content;
+    will-change: transform;
+}
+
+.buttonBase:hover {
+    color: #fff;
+    background-color: #03c1c4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.buttonBase:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.buttonBase:disabled {
+  pointer-events: none;
+}
+
+.deletedNote{
+  background-color: #303841;
+    color: #F3F3F3;
+    padding: 15px;
+    margin: 5px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: rgb(3, 193, 196) 0px 0px 0px 3px,  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.spinner {
+    border: 4px solid #303841;
+    border-top: 4px solid #03c1c4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+}
+
+.page-item {
+  margin: 0 5px;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page-link {
+  
+  padding: 6px 12px;
+  border: 2px solid #03c1c4;
+  cursor: pointer;
+  color: #F3F3F3;
+  background-color: #303841;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.page-link:hover {
+  background-color: #03c1c4;
+  color: white;
+  border-color: #03c1c4;
+}
+
+.active .page-link {
+  background-color: #03c1c4;
+  color: white;
+  border-color: #03c1c4;
+}

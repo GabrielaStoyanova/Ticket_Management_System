@@ -1,0 +1,396 @@
+.contentDetails {
+    display: flex;
+    flex-direction: column;
+    background-color: #03c1c4; 
+    width: 30vw; 
+    height: 80vh;
+    overflow: auto;
+}
+
+.textDangerUpdate{
+    color: #03c1c4;
+}
+
+.exit{
+    align-self: flex-end;
+}
+
+.forms{
+    display: flex;
+    align-self: center;
+}
+
+.exit{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #303841;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #F3F3F3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: fit-content;
+    min-width: fit-content;
+    outline: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    will-change: transform;
+}
+    
+.exit:disabled {
+    pointer-events: none;
+}
+    
+.exit:hover {
+    color: #fff;
+    background-color: #303841;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+    
+.exit:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.account{
+    background-color: #303841;
+    color: #F3F3F3;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: rgb(3, 193, 196) 0px 0px 0px 3px,  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.user-table {
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: fit-content;
+    background-color: #303841;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: rgb(3, 193, 196) 0px 0px 0px 3px,  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .user-table td, .user-table th {
+    padding: 5px;
+    color: #F3F3F3;
+  }
+  
+  .user-table tbody .colorTable{color: #03c1c4;}
+  .user-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px; /* Adjust the radius to match your table */
+  }
+  .user-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px; /* Adjust the radius to match your table */
+  }
+  .user-table tr:hover {background-color: #20242a;}
+  .user-table tr:hover td{color: #03c1c4; font-weight: bold;}
+  
+  .user-table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #4e5f6c;
+    color: #F3F3F3;
+  }
+
+.user-table th:nth-child(2) {
+    border-radius: 0px 0px 0px 0px;
+}
+
+.user-table th:nth-child(1) {
+    border-radius: 15px 0px 0px 0px;
+}
+
+.user-table th:nth-child(3) {
+    border-radius: 0px 15px 0px 0px;
+}
+
+.editForm{
+    background-color: #303841;
+    color: #F3F3F3;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px; /*away from the exit button*/
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: rgb(3, 193, 196) 0px 0px 0px 3px,  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.editForm .labelsInputsContent{
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 5px;
+}
+
+.buttonsUpdateContent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonsStyleUpdate{
+    appearance: none;
+    background-color: #303841;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F3F3F3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    height: fit-content;
+    will-change: transform;
+}
+
+.buttonsStyleUpdate:disabled {
+    pointer-events: none;
+}
+
+.buttonsStyleUpdate:hover {
+    color: #fff;
+    background-color: #03c1c4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.buttonsStyleUpdate:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.inputUpdateContent{
+    background-color: white;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: #303841;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    min-height: 10px;
+    min-width: 10px;
+    outline: none; /*when clicking on it to not have outline*/
+    text-align: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* Ensures select elements look identical to inputs */
+select.inputUpdateContent,
+select.inputAddContent {
+    background-color: white;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #303841;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    min-height: 10px;
+    min-width: 10px;
+    outline: none;
+    text-align: center;
+    width: 100%; /* or any fixed/em-based width */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+textarea.inputUpdateContent, 
+textarea.inputAddContent{
+  overflow-y: auto; /* scrolls only when needed */
+  scrollbar-width: none; /* for Firefox */
+  resize: none; /* optional: disables manual resize */
+  min-height: 3em;
+  line-height: 1.5em;
+  width: 100%;
+}
+
+/* Chrome, Edge, Safari: hide scrollbar */
+textarea.inputUpdateContent::-webkit-scrollbar, 
+textarea.inputAddContent::-webkit-scrollbar{
+  width: 0px;
+  background: transparent; /* Optional: fully transparent */
+}
+
+.addForm{
+    background-color: #303841;
+    color: #F3F3F3;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px; /*away from the exit button*/
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: rgb(3, 193, 196) 0px 0px 0px 3px,  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.addForm .labelsInputsContent{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.inputAddContent{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #303841;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    min-height: 10px;
+    min-width: 10px;
+    outline: none; /*when clicking on it to not have outline*/
+    text-align: center;
+    width: 100%; /*To be able to resize the tab and the fields correspond*/
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.buttonsStyleAdd{
+    appearance: none;
+    background-color: #303841;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F3F3F3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    height: fit-content;
+    will-change: transform;
+}
+
+.buttonsStyleAdd:disabled {
+    pointer-events: none;
+}
+
+.buttonsStyleAdd:hover {
+    color: #fff;
+    background-color: #03c1c4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.buttonsStyleAdd:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.borderNoLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #303841;
+    color: #F3F3F3;
+    padding: 30px;
+    margin: 90px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: rgb(3, 193, 196) 0px 0px 0px 3px,  rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.noLoginAddTicketContentShow{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #03c1c4;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #F3F3F3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: fit-content;
+    min-width: fit-content;
+    padding: 10px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    will-change: transform;
+}
+    
+.noLoginAddTicketContentShow:disabled {
+    pointer-events: none;
+}
+    
+.noLoginAddTicketContentShow:hover {
+    color: #fff;
+    background-color: #03c1c4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+    
+.noLoginAddTicketContentShow:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.noLoginAddTicketContentShowParagraph{
+    color: #03c1c4; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
